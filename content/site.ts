@@ -1,17 +1,17 @@
 export const siteConfig = {
   couple: {
-    bride: "Kate",
-    brideNickname: "Kate",
-    groom: "Christian",
-    groomNickname: "Christian",
+    bride: "Rine Anfone",
+    brideNickname: "Rine",
+    groom: "Francis Ybañez",
+    groomNickname: "Francis",
   },
   wedding: {
-    date: "January 10, 2026",
-    time: "2:00 PM",
-    venue: "St. Joseph the Patriarch Parish, Mabolo, Cebu City",
+    date: "December 27, 2025",
+    time: "TBD",
+    venue: "UCCP Mabinay Central Church",
     tagline: "are getting married!",
     theme: "Classic",
-    motif: "Sage Green and Gold",
+    motif: "Old Rose and Gray",
   },
   details: {
     rsvp: {
@@ -19,23 +19,23 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "St. Joseph the Patriarch Parish, M.J. Cuenco Corner Pope John Paul II Avenue, Mabolo, Cebu City, Cebu",
-    venue: "St. Joseph the Patriarch Parish",
-    date: "January 10, 2026",
+    location: "UCCP Mabinay Central Church, Mabinay, Negros Oriental",
+    venue: "UCCP Mabinay Central Church",
+    date: "December 27, 2025",
     day: "Saturday",
-    time: "2:00 PM",
-    entourageTime: "2:00 PM",
-    guestsTime: "2:00 PM",
+    time: "TBD",
+    entourageTime: "TBD",
+    guestsTime: "TBD",
   },
   reception: {
-    location: "Golden Peak Hotel & Suites, Escario Cebu",
-    venue: "Golden Peak Hotel & Suites",
-    date: "January 10, 2026",
+    location: "Cong Pavillion, Mabinay, Negros Oriental",
+    venue: "Cong Pavillion",
+    date: "December 27, 2025",
     time: "Following the ceremony",
   },
   dressCode: {
     theme: "Semi-Formal Attire",
-    colors: [ "#909E8D", "#D1AB6D", "#E0CFB5", "#F0F0F0"],
+    colors: [ "#C08081", "#808080", "#E5D2D3", "#F5F5F5"],
     sponsors: {
       ladies: "Blue gown / long dress",
       gentlemen: "Black suit and tie"
@@ -46,100 +46,142 @@ export const siteConfig = {
     },
     note: "Please avoid jeans and casual attire."
   },
-  narrative: `They met back in their architecture college days — just batchmates then, each living a separate life. She was the maarte one, the selective type who chose carefully the people she let in. He, on the other hand, was the friendly guy — kind, approachable, and someone everyone could easily talk to. They couldn't have been more different.
+  narrative: `Where it Started
+One cold July night, fate has brought together two hearts: one broken, one still acclimatizing. With a bond slowly woven by God’s perfect plan, strangers turn into friends. With a shared love for music, animals, food, and movies, the bond becomes thicker and the distance, nearer. Love sparked naturally, as if it had already been destined to be.
+As we shared more moments together, we’ve become inseparable. We have been each other’s source of joy, a shoulder to cry on, and armor to make ourselves feel stronger. Through ups and downs, through literal sickness and health, we have always been on each other’s side. 
+It is not just our love that grew; our bodies also grew, doubling our size. But as research says, contented long-term relationships can add pounds of “happy weight.” 
 
-Three years after graduation, fate decided to draw their lines together. It started simply — a few replies to her social media stories, a borrowed book, small conversations that didn't mean much at first. She would respond briefly, not knowing that these short exchanges would one day lead to something life-changing.
+In Sickness and In Health
+The years 2018 and 2019 had been challenging for the couple. He had his first-ever flare-up of his Pustular Psoriasis, which they thought was simply an allergic reaction. It took him 2 months to fully recover, but she still stood by his side and cared for him. She also had her fair share, as she had anxious and depressive episodes during her internship, and she was diagnosed with adjustment disorder with Anxiety and Depressive Symptoms. He travelled from Bayawan to Dumaguete almost every day for weeks to make sure she was okay, until she withdrew from her internship. It is a good thing that lately, no flare-ups or episodes have occurred.
 
-Then one day, they met again at a construction site. This time, they talked — really talked. And something was different. She found him interesting, warm, and genuine. From then on, messages turned into conversations, and conversations turned into something deeper.
-
-It was during Sinulog when he invited her to visit Sto. Niño Church. They shared prayers & laughter — spending the whole day simply enjoying each other's company. That day, something in her heart shifted. Days after she realized that maybe, just maybe, this was the man she had been praying for — someone who would bring her closer to God.
-
-Months later, they made it official. From then on, they have learned, grown, and become better together in all aspects of life. Their love is not the kind you see in movies — not perfect, not always grand. But it is real, quiet, and steadfast. Two people, choosing each other every single day.
-
-And now, as they begin a new chapter of their lives, they invite you to witness and celebrate the love that God has written for them.`,
+2025, This is it
+Being together for 13 years made them know each other’s strengths and weaknesses, their imperfections and flaws. It is high time for them to seal the deal. There were no fancy proposals, no rings, no surprises – it was a mutual decision that this year would be the year for them to finally get married.`,
   giftNote: `With all that we have, we are truly blessed. Your presence and prayer are all that we request.
-But if you desire to give nonetheless, a monetary gift is the one we suggest.`,
+ But if you desire to give nonetheless, a monetary gift is the one we suggest.`,
   colors: {
-    primary: "#525E2C",
-    secondary: "#909E8D",
+    primary: "#C08081",
+    secondary: "#808080",
   },
 }
 
 export const entourage = [
-  { role: "Best Man", name: "Mr. ____________" },
-  { role: "Matron of Honor", name: "Jairah Glaze Ortiaga" },
-  
-  // Kate's Family
-  { role: "Father", name: "Engr. Marlo Dela Peña", group: "kate-family" },
-  { role: "Mother", name: "Normalita Dela Peña", group: "kate-family" },
-  
-  // Christian's Family
-  { role: "Mother", name: "Rosario Gana-an", group: "christian-family" },
-  { role: "Brother", name: "Engr. Rowell Ian Gana-an", group: "christian-family" },
-  { role: "Sister", name: "Ar. April Gana-an", group: "christian-family" },
-  
-  // Clothing sponsors - TO CLOTH US AS ONE
-  { role: "Groomsman", name: "Mr. ____________", group: "clothing" },
-  { role: "Bridesmaid", name: "Ms. ____________", group: "clothing" },
-  
-  // Binding sponsors - TO BIND US TOGETHER
-  { role: "Groomsman", name: "Mr. ____________", group: "binding" },
-  { role: "Bridesmaid", name: "Ms. ____________", group: "binding" },
-  
-  // Path sponsors - TO LIGHT OUR PATH
-  { role: "Groomsman", name: "Mr. ____________", group: "path" },
-  { role: "Bridesmaid", name: "Ms. ____________", group: "path" },
-  
-  // Candle sponsors - TO LIGHT OUR UNITY
-  { role: "Groomsman", name: "Oliver Balignot", group: "candle" },
-  { role: "Bridesmaid", name: "Jahna Balignot", group: "candle" },
-  
-  // Veil sponsors - TO VEIL US AS ONE
-  { role: "Groomsman", name: "Mr. Reiniel Labajo", group: "veil" },
-  { role: "Bridesmaid", name: "Mrs. Rowella Gana-an Labajo", group: "veil" },
-  
-  // Groomsmen and Bridesmaids - TO GUIDE US IN OUR WAY
-  { role: "Groomsman", name: "Ar. John Carlo" },
-  { role: "Groomsman", name: "Ar. Ian Kyle Diaz" },
-  { role: "Groomsman", name: "Brix Dale Dela Peña" },
-  { role: "Groomsman", name: "Vince Dela Peña" },
-  { role: "Groomsman", name: "Brent Kyle Dela Peña" },
-  { role: "Groomsman", name: "Ar. Galileo Ygay" },
-  
-  { role: "Bridesmaid", name: "Ar. Judee Mae Ybañez" },
-  { role: "Bridesmaid", name: "Ar. Tricia Lynne Molina" },
-  { role: "Bridesmaid", name: "Ar. Cindrelle Java" },
-  { role: "Bridesmaid", name: "Ar. Amy Venus Palulay" },
-  { role: "Bridesmaid", name: "Mary Lorrien Restauro" },
-  { role: "Bridesmaid", name: "Shimonie Laspiñas" },
-  
-  // Cord sponsors - TO UNITE US WITH LOVE
-  { role: "Groomsman", name: "Mr. Bryle Crodua", group: "cord" },
-  { role: "Bridesmaid", name: "Mrs. Monique Crodua", group: "cord" },
-  
-  // Flower Girls
-  { role: "Flower Girl", name: "Olivia Gana-an" },
-  { role: "Flower Girl", name: "Karyl Dela Peña" },
-  { role: "Flower Girl", name: "Kayla Dela Peña" },
-  { role: "Flower Girl", name: "Elvisa Matas" },
-  { role: "Flower Girl", name: "Carmencita Dela Peña" },
-  
+  // Best Man & Maid of Honor
+  { role: "Best Man", name: "Mr. Ryle Mitchum Anfone" },
+  { role: "Maid of Honor", name: "Ms. Dawn April Anfone" },
+
+  // Bride's Parents (Rine)
+  { role: "Father", name: "Rev. Ricky Anfone", group: "kate-family" },
+  { role: "Mother", name: "Mrs. Nellie Anfone", group: "kate-family" },
+
+  // Groom's Parents (Francis)
+  { role: "Father", name: "Rev. Manolo Ybañez (+)", group: "christian-family" },
+  { role: "Mother", name: "Mrs. Eva Ybañez", group: "christian-family" },
+
+  // Secondary Sponsors
+  // Veil
+  { role: "Groomsman", name: "Rev. Joeric Saguban", group: "veil" },
+  { role: "Bridesmaid", name: "Mrs. Daisy Mae Saguban", group: "veil" },
+
+  // Candle
+  { role: "Groomsman", name: "Rev. Errol Balderas", group: "candle" },
+  { role: "Bridesmaid", name: "Mrs. Shairah May Cristina Balderas", group: "candle" },
+
+  // Cord
+  { role: "Groomsman", name: "Mr. Kristanne Louise Yu", group: "cord" },
+  { role: "Bridesmaid", name: "Mrs. Alma Luna Yu", group: "cord" },
+
+  // Groomsmen
+  { role: "Groomsman", name: "Mr. Ztham Cabugnason" },
+  { role: "Groomsman", name: "Mr. Keann Delos Reyes" },
+  { role: "Groomsman", name: "Mr. Keneth Geraldino" },
+  { role: "Groomsman", name: "Mr. Genews Providencia" },
+  { role: "Groomsman", name: "Mr. Yohann Danise Saguban" },
+  { role: "Groomsman", name: "Engr. Kim Ian Delos Reyes" },
+  { role: "Groomsman", name: "Dr. Antonio Vincoy Jr." },
+  { role: "Groomsman", name: "Mr. Daniel Oplimo" },
+  { role: "Groomsman", name: "Mr. Pierce Neptali Yu" },
+
+  // Bridesmaids
+  { role: "Bridesmaid", name: "Ms. Shaine Casido" },
+  { role: "Bridesmaid", name: "Ms. Nehemhia Mi-ot" },
+  { role: "Bridesmaid", name: "Ms. Zamantha Nicole Babor" },
+  { role: "Bridesmaid", name: "Ms. Joyce Mae Almorato" },
+  { role: "Bridesmaid", name: "Ms. Irina Diao" },
+  { role: "Bridesmaid", name: "Ms. Stacy Kaye Socorro" },
+  { role: "Bridesmaid", name: "Dr. Florlin Grace Yrad" },
+  { role: "Bridesmaid", name: "Ms. Irah Stefan Diao" },
+  { role: "Bridesmaid", name: "Ms. Cielo Silva" },
+
   // Bearers
-  { role: "Ring Bearer", name: "Kendrick Xavier Dela Peña" },
-  { role: "Coin Bearer", name: "Zeke Gana-an" },
-  { role: "Bible Bearer", name: "Raizen Gana-an Labajo" },
+  { role: "Bible Bearer", name: "Mr. Josh Manoel Galarpe" },
+  { role: "Ring Bearer", name: "Mr. Eros Johnoel Galarpe" },
+  { role: "Coin Bearer", name: "Mr. Carl Jezrael Galarpe" },
+
+  // Flower Kids
+  { role: "Flower Girl", name: "Gio Mayol" },
+  { role: "Flower Girl", name: "Khalil Dion Socorro" },
+  { role: "Flower Girl", name: "Allem Andaya" },
+  { role: "Flower Girl", name: "Aziel Andaya" },
+  { role: "Flower Girl", name: "Athena Janicha Ybañez" },
+  { role: "Flower Girl", name: "Nayera Kaylee Lobos" },
+  { role: "Flower Girl", name: "Xaviel Anfone" },
+  { role: "Flower Girl", name: "Xaffrael Anfone" },
+  { role: "Flower Girl", name: "Shaquille Ybañez" },
+  { role: "Flower Girl", name: "Alexander Yu" },
+  { role: "Flower Girl", name: "Kyle Anthony Yu" },
+  { role: "Flower Girl", name: "Chinoah Sky Silva" },
+
+  // Officiating Ministers
+  { role: "Officiating Minister", name: "Rev. Arnie Tejo" },
+  { role: "Officiating Minister", name: "Rev. Karlo Uy" },
 ]
 
 export const principalSponsors = [
-  { name: "Andrew Ring", spouse: "Eldegwyne Ring" },
-  { name: "Rosinni Dela Peña", spouse: "Johaira Dela Peña" },
-  { name: "Richard Pitogo", spouse: "Alma Pitogo" },
-  { name: "Engr. Dindo Lepaopao", spouse: "Engr. Maria Fe Lepaopao" },
-  { name: "Engr. Leonides Paragsa", spouse: "Marifel Paragsa" },
-  { name: "Engr. Amy Lauron", spouse: "Charito Lauron" },
-  { name: "Duke Ng", spouse: "Jeanette Layne" },
-  { name: "Ar. Jerome Buenaventura", spouse: "Mrs.Rosa Ann Buenaventura" },
-  { name: "Sonny Maglente", spouse: "Sunshine Maglente" },
-  { name: "Joseph Berondo", spouse: "Katherine Berondo" },
-  { name: "Jun Gana-an", spouse: "Bing Gana-an" },
+  // Male Principal Sponsors
+  { name: "Hon. Ernie Uy", spouse: "" },
+  { name: "Mr. Richard Anfone", spouse: "" },
+  { name: "Mr. Gil Socorro", spouse: "" },
+  { name: "Mr. Jimmy Malacapay", spouse: "" },
+  { name: "Mr. Alan Delos Reyes", spouse: "" },
+  { name: "Mr. Rey Anfone", spouse: "" },
+  { name: "Mr. Peter U. Yu", spouse: "" },
+  { name: "Engr. Lyster Miraflor", spouse: "" },
+  { name: "Engr. Noel Galarpe", spouse: "" },
+  { name: "Mr. Hendrick Emperado", spouse: "" },
+  { name: "Dr. Caryl Riconalla", spouse: "" },
+  { name: "Mr. Eduardo Diao", spouse: "" },
+  { name: "Mr. Richard Cabugnason", spouse: "" },
+  { name: "Rev. Elmer Providencia", spouse: "" },
+  { name: "Rev. Callum Tabada", spouse: "" },
+  { name: "Rev. Jessie Pagalan", spouse: "" },
+  { name: "Mr. Alejo Daniel", spouse: "" },
+  { name: "Rev. Lope Robin", spouse: "" },
+  { name: "Rev. Jerome Nalam", spouse: "" },
+  { name: "Rev. Danny dela Rama", spouse: "" },
+  { name: "Mr. Doel Wetzel Pacana", spouse: "" },
+  { name: "Mr. Wilson Cadalso, Sr.", spouse: "" },
+
+  // Female Principal Sponsors
+  { name: "Hon. Joeterry Uy", spouse: "" },
+  { name: "Mrs. Letecia Anfone", spouse: "" },
+  { name: "Mrs. Ieny Socorro", spouse: "" },
+  { name: "Mrs. Lelanie Malacapay", spouse: "" },
+  { name: "Mrs. Iely Delos Reyes", spouse: "" },
+  { name: "Mrs. Perlita Anfone", spouse: "" },
+  { name: "Mrs. Naomie Yu", spouse: "" },
+  { name: "Mrs. Sarah Miraflor", spouse: "" },
+  { name: "Mrs. Erminda Galarpe", spouse: "" },
+  { name: "Dr. Rasanie Emperado", spouse: "" },
+  { name: "Dr. Joan Dee Riconalla", spouse: "" },
+  { name: "Mrs. Lilian Diao", spouse: "" },
+  { name: "Mrs. Verlita Cabugnason", spouse: "" },
+  { name: "Mrs. Gina Providencia", spouse: "" },
+  { name: "Pstr. Dominga Tabada", spouse: "" },
+  { name: "Rev. Charity Torralba", spouse: "" },
+  { name: "Mrs. Fredelin Berjolano", spouse: "" },
+  { name: "Mrs. Juliet Aviles", spouse: "" },
+  { name: "Dr. Jean Nalam", spouse: "" },
+  { name: "Rev. Priscilla Casido", spouse: "" },
+  { name: "Ms. Ellanie Joy Pacana", spouse: "" },
+  { name: "Mrs. Corazon Cadalso", spouse: "" },
 ]

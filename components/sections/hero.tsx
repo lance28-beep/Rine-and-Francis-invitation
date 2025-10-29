@@ -9,11 +9,11 @@ const Silk = dynamic(() => import("@/components/silk"), { ssr: false })
 
 export function Hero() {
   const weddingImages: string[] = [
-    "/Couple_img/couple (7).webp",
-    "/Couple_img/couple (13).webp",
-    "/Couple_img/couple (11).webp",
-    "/Couple_img/couple (1).webp",
-    "/Couple_img/couple (9).webp"
+    "/Couple_img/couple (15).jpg",
+    "/Couple_img/couple (2).jpg",
+    "/Couple_img/couple (1).jpg",
+    "/Couple_img/couple (11).jpg",
+    "/Couple_img/couple (8).jpg"
   ]
 
   const transformStyles: string[] = [
@@ -31,7 +31,7 @@ export function Hero() {
     >
       {/* Background Layers */}
       <div className="absolute inset-0 w-full h-full">
-        <Silk speed={5} scale={1} color="#909E8D" noiseIntensity={1.5} rotation={0} />
+        <Silk speed={5} scale={1} color="#C08081" noiseIntensity={1.5} rotation={0} />
       </div>
 
       {/* Multi-layered Gradient Overlay */}
@@ -52,15 +52,17 @@ export function Hero() {
           
           {/* Main Heading Section */}
           <div className="text-center space-y-1 sm:space-y-2 md:space-y-3 w-full">
+          <p className="text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase text-[#FBFFE8] font-light mb-0 sm:mb-1 md:mb-2">
+          You are cordially invited to celebrate the wedding of
+            </p>
 
-
-            {/* Names */}
+            {/* fist name of couple combined */}
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-[#F0F0F0] tracking-wide leading-tight drop-shadow-2xl">
-              {siteConfig.couple.bride} & {siteConfig.couple.groom}
+              Rine & Francis
             </h1>
-                        {/* Subtitle - Getting Married */}
-          <p className="text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase text-[#D1AB6D] font-light mb-0 sm:mb-1 md:mb-2">
-              are getting married
+                        {/* Full Names of Couple*/}
+          <p className="text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase text-[#FBFFE8] font-bold mb-0 sm:mb-1 md:mb-2">
+              Rine Anfone & Francis Ybañez
             </p>
 
             {/* Decorative Line */}
@@ -88,16 +90,16 @@ export function Hero() {
 
           {/* Love Story Card */}
           <div className="w-full max-w-2xl px-2 sm:px-0">
-            <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-[#525E2C]/15 backdrop-blur-md rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 border border-[#D1AB6D]/30 shadow-xl">
+            <div className="relative bg-gradient-to-br from-white/10 via:white/5 to-[#525E2C]/15 backdrop-blur-md rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 border border-[#D1AB6D]/30 shadow-xl">
               {/* Decorative corner elements */}
-              <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-[#D1AB6D] rounded-tl-xl"></div>
-              <div className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-[#D1AB6D] rounded-tr-xl"></div>
-              <div className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-[#D1AB6D] rounded-bl-xl"></div>
-              <div className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-[#D1AB6D] rounded-br-xl"></div>
+              <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-[#FBFFE8] rounded-tl-xl"></div>
+              <div className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-[#FBFFE8] rounded-tr-xl"></div>
+              <div className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-[#FBFFE8] rounded-bl-xl"></div>
+              <div className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-[#FBFFE8] rounded-br-xl"></div>
               
               <div className="text-center space-y-3 sm:space-y-4 relative z-10">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-[#D1AB6D] tracking-wide drop-shadow-lg">
-                  The Beginning of Forever
+                <h2 className="text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase text-[#FBFFE8] font-bold mb-0 sm:mb-1 md:mb-2">
+                A Promise of Forever 
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-[#F0F0F0]/80 leading-relaxed pt-2">
                   With hearts full of love and gratitude, we invite you to witness and celebrate the next chapter of our story as we begin our forever together.
@@ -107,9 +109,6 @@ export function Hero() {
               <div className="text-center space-y-2 mt-4 sm:mt-6">
                 <p className="text-lg sm:text-xl md:text-2xl text-[#F0F0F0] font-semibold drop-shadow-md">
                   {siteConfig.ceremony.day}, {siteConfig.ceremony.date}
-                </p>
-                <p className="text-sm sm:text-base md:text-lg text-[#D1AB6D] font-medium drop-shadow-md">
-                  {siteConfig.ceremony.time}
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-[#E0CFB5] leading-relaxed drop-shadow-md">
                   {siteConfig.wedding.venue}
@@ -123,14 +122,14 @@ export function Hero() {
             <Button
               href="#narrative"
               variant="primary"
-              className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg font-semibold tracking-wide rounded-lg transition-all duration-500 ease-in-out bg-gradient-to-r from-[#525E2C] via-[#909E8D] to-[#525E2C] border border-[#D1AB6D]/40 text-[#F0F0F0] shadow-lg hover:shadow-xl hover:scale-[1.02] hover:border-[#D1AB6D]/60 hover:text-white hover:from-[#6B7A3A] hover:via-[#A0B09D] hover:to-[#6B7A3A] active:scale-[0.98]"
+              className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg font-semibold tracking-wide rounded-lg transition-all duration-300 ease-in-out bg-[#FBFFE8] text-[#C0737B] border border-[#C0737B]/30 shadow-lg hover:shadow-xl hover:scale-[1.02] hover:bg-[#ACACAC] hover:text-[#FBFFE8] hover:border-[#C0737B]/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C0737B]/30 active:scale-[0.98]"
             >
               Our Love Story
             </Button>
             <Button
               href="#rsvp"
               variant="outline"
-              className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg font-semibold tracking-wide rounded-lg transition-all duration-500 ease-in-out bg-[#D1AB6D] border-2 border-[#D1AB6D] text-[#525E2C] text-center shadow-md hover:shadow-lg hover:scale-[1.02] hover:bg-[#DDC4A0] hover:border-[#E8D5BB] hover:text-white active:scale-[0.98]"
+              className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg font-semibold tracking-wide rounded-lg transition-all duration-300 ease-in-out bg-[#C0737B] border-2 border-[#FBFFE8]/40 !text-[#FBFFE8] text-center shadow-md hover:shadow-lg hover:scale-[1.02] hover:bg-[#848B79] hover:border-[#FBFFE8]/60 hover:!text-[#FBFFE8] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FBFFE8]/30 focus:!text-[#FBFFE8] active:scale-[0.98]"
             >
               RSVP
             </Button>

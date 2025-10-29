@@ -15,17 +15,17 @@ interface EntourageRole {
 export function Entourage() {
   const roleCategories: EntourageRole[] = [
     {
-      title: "KATE'S PARENTS",
+      title: "RINE'S PARENTS",
       subtitle: "",
       layout: "centered",
       roles: ["Father", "Mother"],
       icon: <Heart className="w-5 h-5" />,
     },
     {
-      title: "CHRISTIAN'S PARENTS",
+      title: "FRANCIS' PARENTS",
       subtitle: "",
       layout: "centered",
-      roles: ["Mother", "Brother", "Sister"],
+      roles: ["Father", "Mother"],
       icon: <Heart className="w-5 h-5" />,
     },
     {
@@ -113,6 +113,13 @@ export function Entourage() {
       icon: <Flower2 className="w-5 h-5" />,
     },
     {
+      title: "OFFICIATING MINISTERS",
+      subtitle: "",
+      layout: "centered",
+      roles: ["Officiating Minister"],
+      icon: <Heart className="w-5 h-5" />,
+    },
+    {
       title: "Little Groom & Little Bride",
       subtitle: "Our little ones",
       layout: "two-column",
@@ -129,8 +136,8 @@ export function Entourage() {
   ]
 
   const categoryGroupMap: Record<string, string | undefined> = {
-    "KATE'S PARENTS": "kate-family",
-    "CHRISTIAN'S PARENTS": "christian-family",
+    "RINE'S PARENTS": "kate-family",
+    "FRANCIS' PARENTS": "christian-family",
     "TO CLOTH US AS ONE": "clothing",
     "TO BIND US TOGETHER": "binding",
     "TO LIGHT OUR PATH": "path",

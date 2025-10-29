@@ -6,20 +6,21 @@ import { Section } from "@/components/section"
 // Removed circular gallery in favor of a responsive masonry layout
 
 const galleryItems = [
-  { image: "/Couple_img/couple (1).webp", text: "Kate & Christian" },   
-  { image: "/Couple_img/couple (2).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (3).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (4).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (5).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (6).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (7).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (8).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (9).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (10).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (11).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (12).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (13).webp", text: "Kate & Christian" },
-  { image: "/Couple_img/couple (14).webp", text: "Kate & Christian" },
+  { image: "/Couple_img/couple (1).jpg", text: "Rine & Francis" },   
+  { image: "/Couple_img/couple (2).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (3).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (4).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (5).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (6).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (7).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (8).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (9).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (10).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (11).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (12).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (13).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (14).jpg", text: "Rine & Francis" },
+  { image: "/Couple_img/couple (15).jpg", text: "Rine & Francis" },
 ]
 
 export function Gallery() {
@@ -99,59 +100,61 @@ export function Gallery() {
   return (
     <Section
       id="gallery"
-      className="relative bg-gradient-to-b from-[#525E2C] via-[#909E8D] to-[#525E2C] py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden"
+      className="relative bg-[url('/background/gallerybackground.png')] bg-center bg-cover py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden"
     >
+      {/* Background overlay for readability over the image */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#848B79]/60 via-[#ACACAC]/40 to-[#848B79]/60 pointer-events-none" />
       {/* Decorative background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 2 }}>
         {/* Floating geometric shapes with color palette - hidden on small screens */}
-        <div className="hidden sm:block absolute top-10 left-10 w-20 h-20 bg-[#D1AB6D]/10 rounded-full blur-xl animate-pulse" />
-        <div className="hidden sm:block absolute top-20 right-20 w-16 h-16 bg-[#E0CFB5]/15 rounded-full blur-lg animate-pulse delay-1000" />
-        <div className="hidden sm:block absolute bottom-20 left-20 w-24 h-24 bg-[#D1AB6D]/8 rounded-full blur-2xl animate-pulse delay-2000" />
-        <div className="hidden sm:block absolute bottom-10 right-10 w-12 h-12 bg-[#E0CFB5]/12 rounded-full blur-lg animate-pulse delay-500" />
+        <div className="hidden sm:block absolute top-10 left-10 w-20 h-20 bg-[#C0737B]/10 rounded-full blur-xl animate-pulse" />
+        <div className="hidden sm:block absolute top-20 right-20 w-16 h-16 bg-[#FBFFE8]/15 rounded-full blur-lg animate-pulse delay-1000" />
+        <div className="hidden sm:block absolute bottom-20 left-20 w-24 h-24 bg-[#C0737B]/8 rounded-full blur-2xl animate-pulse delay-2000" />
+        <div className="hidden sm:block absolute bottom-10 right-10 w-12 h-12 bg-[#FBFFE8]/12 rounded-full blur-lg animate-pulse delay-500" />
         
         {/* Smaller mobile decorative elements */}
-        <div className="sm:hidden absolute top-8 left-8 w-12 h-12 bg-[#D1AB6D]/8 rounded-full blur-lg animate-pulse" />
-        <div className="sm:hidden absolute bottom-8 right-8 w-10 h-10 bg-[#E0CFB5]/10 rounded-full blur-md animate-pulse delay-1000" />
+        <div className="sm:hidden absolute top-8 left-8 w-12 h-12 bg-[#C0737B]/8 rounded-full blur-lg animate-pulse" />
+        <div className="sm:hidden absolute bottom-8 right-8 w-10 h-10 bg-[#FBFFE8]/10 rounded-full blur-md animate-pulse delay-1000" />
         
         {/* Decorative lines with gradient */}
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#D1AB6D]/30 to-transparent" />
-        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#E0CFB5]/25 to-transparent" />
+        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#C0737B]/30 to-transparent" />
+        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#FBFFE8]/25 to-transparent" />
         
         {/* Corner decorative elements with color palette - reduced on mobile */}
-        <div className="absolute top-0 left-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-br from-[#D1AB6D]/15 via-[#E0CFB5]/10 to-transparent rounded-br-3xl" />
-        <div className="absolute top-0 right-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-bl from-[#D1AB6D]/15 via-[#E0CFB5]/10 to-transparent rounded-bl-3xl" />
-        <div className="absolute bottom-0 left-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-tr from-[#D1AB6D]/15 via-[#E0CFB5]/10 to-transparent rounded-tr-3xl" />
-        <div className="absolute bottom-0 right-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-tl from-[#D1AB6D]/15 via-[#E0CFB5]/10 to-transparent rounded-tl-3xl" />
+        <div className="absolute top-0 left-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-br from-[#C0737B]/15 via-[#FBFFE8]/10 to-transparent rounded-br-3xl" />
+        <div className="absolute top-0 right-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-bl from-[#C0737B]/15 via-[#FBFFE8]/10 to-transparent rounded-bl-3xl" />
+        <div className="absolute bottom-0 left-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-tr from-[#C0737B]/15 via-[#FBFFE8]/10 to-transparent rounded-tr-3xl" />
+        <div className="absolute bottom-0 right-0 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-tl from-[#C0737B]/15 via-[#FBFFE8]/10 to-transparent rounded-tl-3xl" />
       </div>
 
       {/* Custom larger title */}
       <div className="relative text-center mb-12 sm:mb-16 md:mb-20 px-4" style={{ zIndex: 10 }}>
         {/* Decorative ornaments */}
         <div className="flex items-center justify-center gap-3 sm:gap-6 mb-4 sm:mb-6">
-          <div className="w-8 sm:w-16 h-px bg-gradient-to-r from-transparent via-[#D1AB6D]/60 to-[#D1AB6D]/30" />
+          <div className="w-8 sm:w-16 h-px bg-gradient-to-r from-transparent via-[#C0737B]/60 to-[#C0737B]/30" />
           <div className="flex gap-1.5 sm:gap-2">
-            <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#D1AB6D] rounded-full" />
-            <div className="w-0.5 sm:w-1 h-0.5 sm:h-1 bg-[#E0CFB5] rounded-full self-center" />
-            <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#D1AB6D] rounded-full" />
+            <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#C0737B] rounded-full" />
+            <div className="w-0.5 sm:w-1 h-0.5 sm:h-1 bg-[#FBFFE8] rounded-full self-center" />
+            <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#C0737B] rounded-full" />
           </div>
-          <div className="w-8 sm:w-16 h-px bg-gradient-to-l from-transparent via-[#D1AB6D]/60 to-[#D1AB6D]/30" />
+          <div className="w-8 sm:w-16 h-px bg-gradient-to-l from-transparent via-[#C0737B]/60 to-[#C0737B]/30" />
         </div>
         
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-[#E0CFB5] mb-4 sm:mb-6 text-balance drop-shadow-lg relative px-2">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-[#FBFFE8] mb-4 sm:mb-6 text-balance drop-shadow-lg relative px-2">
           <span className="relative z-10">Our Moments</span>
           {/* Text glow effect */}
-          <span className="absolute inset-0 text-[#D1AB6D]/20 blur-2xl -z-10">Our Moments</span>
+          <span className="absolute inset-0 text-[#C0737B]/20 blur-2xl -z-10">Our Moments</span>
         </h2>
         
-        <p className="text-base sm:text-lg md:text-xl text-[#F0F0F0] font-sans font-light max-w-2xl mx-auto px-2 sm:px-4 leading-relaxed">
+        <p className="text-base sm:text-lg md:text-xl text-[#FBFFE8] font-sans font-light max-w-2xl mx-auto px-2 sm:px-4 leading-relaxed">
           Every moment, a treasured memory made eternal
         </p>
         
         {/* Bottom decorative ornaments */}
         <div className="flex items-center justify-center gap-3 sm:gap-6 mt-6 sm:mt-8">
-          <div className="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent via-[#E0CFB5]/40 to-[#E0CFB5]/20" />
-          <div className="w-0.5 sm:w-1 h-0.5 sm:h-1 bg-[#E0CFB5] rounded-full" />
-          <div className="w-8 sm:w-12 h-px bg-gradient-to-l from-transparent via-[#E0CFB5]/40 to-[#E0CFB5]/20" />
+          <div className="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent via-[#FBFFE8]/40 to-[#FBFFE8]/20" />
+          <div className="w-0.5 sm:w-1 h-0.5 sm:h-1 bg-[#FBFFE8] rounded-full" />
+          <div className="w-8 sm:w-12 h-px bg-gradient-to-l from-transparent via-[#FBFFE8]/40 to-[#FBFFE8]/20" />
         </div>
       </div>
 
@@ -162,29 +165,29 @@ export function Gallery() {
             {/* Enhanced gallery container */}
             <div className="relative">
               {/* Multiple layered glow effects */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#D1AB6D]/20 via-[#E0CFB5]/15 to-[#D1AB6D]/20 rounded-3xl blur-2xl opacity-40 animate-pulse" />
-              <div className="absolute -inset-3 bg-gradient-to-r from-[#D1AB6D]/30 via-[#E0CFB5]/20 to-[#D1AB6D]/30 rounded-3xl blur-md opacity-50 animate-pulse" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#C0737B]/20 via-[#FBFFE8]/15 to-[#C0737B]/20 rounded-3xl blur-2xl opacity-40 animate-pulse" />
+              <div className="absolute -inset-3 bg-gradient-to-r from-[#C0737B]/30 via-[#FBFFE8]/20 to-[#C0737B]/30 rounded-3xl blur-md opacity-50 animate-pulse" />
 
               {/* Enhanced decorative corner accents */}
-              <div className="absolute -top-2 -left-2 w-5 h-5 bg-gradient-to-br from-[#D1AB6D] via-[#E0CFB5] to-[#D1AB6D] rounded-full blur-sm opacity-70 shadow-lg" />
-              <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-bl from-[#D1AB6D] via-[#E0CFB5] to-[#D1AB6D] rounded-full blur-sm opacity-70 shadow-lg" />
-              <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-gradient-to-tr from-[#D1AB6D] via-[#E0CFB5] to-[#D1AB6D] rounded-full blur-sm opacity-70 shadow-lg" />
-              <div className="absolute -bottom-2 -right-2 w-5 h-5 bg-gradient-to-tl from-[#D1AB6D] via-[#E0CFB5] to-[#D1AB6D] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -top-2 -left-2 w-5 h-5 bg-gradient-to-br from-[#C0737B] via-[#FBFFE8] to-[#C0737B] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-bl from-[#C0737B] via-[#FBFFE8] to-[#C0737B] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-gradient-to-tr from-[#C0737B] via-[#FBFFE8] to-[#C0737B] rounded-full blur-sm opacity-70 shadow-lg" />
+              <div className="absolute -bottom-2 -right-2 w-5 h-5 bg-gradient-to-tl from-[#C0737B] via-[#FBFFE8] to-[#C0737B] rounded-full blur-sm opacity-70 shadow-lg" />
 
               {/* Main gallery card with enhanced multi-layer styling */}
-              <div className="relative bg-gradient-to-br from-[#525E2C]/95 via-[#525E2C]/95 to-[#3d461d]/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-3 sm:p-5 md:p-7 lg:p-9 border-2 border-[#D1AB6D]/60 shadow-[0_8px_32px_rgba(82,94,44,0.3),0_0_0_1px_rgba(209,171,109,0.2)]">
+              <div className="relative bg-gradient-to-br from-[#848B79]/95 via-[#848B79]/95 to-[#848B79]/90 backdrop-blur-md rounded-2xl sm:rounded-3xl p-3 sm:p-5 md:p-7 lg:p-9 border-2 border-[#C0737B]/60 shadow-[0_8px_32px_rgba(132,139,121,0.3),0_0_0_1px_rgba(192,115,123,0.2)]">
                 
                 {/* Inner decorative border with gradient */}
-                <div className="absolute inset-1 sm:inset-2 border border-[#D1AB6D]/40 rounded-xl sm:rounded-2xl" />
+                <div className="absolute inset-1 sm:inset-2 border border-[#C0737B]/40 rounded-xl sm:rounded-2xl" />
                 
                 {/* Additional inner glow */}
-                <div className="absolute inset-2 sm:inset-3 bg-gradient-to-br from-[#D1AB6D]/10 to-transparent rounded-xl sm:rounded-2xl" />
+                <div className="absolute inset-2 sm:inset-3 bg-gradient-to-br from-[#C0737B]/10 to-transparent rounded-xl sm:rounded-2xl" />
                 
                 {/* Gallery content */}
                 <div className="relative z-10 w-full">
                   {isLoading ? (
                     <div className="flex items-center justify-center h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
-                      <div className="w-16 h-16 border-4 border-[#D1AB6D]/30 border-t-[#D1AB6D] rounded-full animate-spin" />
+                      <div className="w-16 h-16 border-4 border-[#C0737B]/30 border-t-[#C0737B] rounded-full animate-spin" />
                     </div>
                   ) : null}
 
@@ -193,7 +196,7 @@ export function Gallery() {
                       <button
                         key={item.image + index}
                         type="button"
-                        className="group mb-2 sm:mb-3 md:mb-4 w-full break-inside-avoid overflow-hidden rounded-lg border border-[#D1AB6D]/40 bg-[#3d461d]/40 shadow-[0_4px_20px_rgba(82,94,44,0.25)] hover:shadow-[0_8px_28px_rgba(82,94,44,0.35)] transition-shadow"
+                        className="group mb-2 sm:mb-3 md:mb-4 w-full break-inside-avoid overflow-hidden rounded-lg border border-[#C0737B]/40 bg-[#848B79]/30 shadow-[0_4px_20px_rgba(132,139,121,0.25)] hover:shadow-[0_8px_28px_rgba(132,139,121,0.35)] transition-shadow"
                         onClick={() => {
                           setSelectedImage(item)
                           setCurrentIndex(index)
@@ -214,9 +217,9 @@ export function Gallery() {
                 </div>
                 
                 {/* Enhanced decorative sparkle effects */}
-                <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-2 h-2 sm:w-3 sm:h-3 bg-[#D1AB6D] rounded-full animate-ping opacity-80 shadow-lg" />
-                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#909E8D] rounded-full animate-pulse opacity-70 shadow-md" />
-                <div className="absolute top-1/2 left-1 sm:left-2 w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E0CFB5] rounded-full animate-pulse opacity-50" />
+                <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-2 h-2 sm:w-3 sm:h-3 bg-[#C0737B] rounded-full animate-ping opacity-80 shadow-lg" />
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#ACACAC] rounded-full animate-pulse opacity-70 shadow-md" />
+                <div className="absolute top-1/2 left-1 sm:left-2 w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#FBFFE8] rounded-full animate-pulse opacity-50" />
               </div>
             </div>
           </div>
