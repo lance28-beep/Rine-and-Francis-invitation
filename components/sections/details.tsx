@@ -172,9 +172,10 @@ export function Details() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center relative z-10">
+            {/* View Map button: hidden on mobile, visible on sm and larger */}
             <button
               onClick={() => setShowImageModal('ceremony')}
-              className="flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-[#C0737B] to-[#C0737B]/90 hover:from-[#C0737B]/90 hover:to-[#C0737B] text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 shadow-lg"
+              className="hidden sm:flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-[#C0737B] to-[#C0737B]/90 hover:from-[#C0737B]/90 hover:to-[#C0737B] text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 shadow-lg"
             >
               <MapPin className="w-4 h-4" />
               <span>View Map</span>
@@ -245,9 +246,10 @@ export function Details() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center relative z-10">
+            {/* View Map button: hidden on mobile, visible on sm and larger */}
             <button
               onClick={() => setShowImageModal('reception')}
-              className="flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-[#C0737B] to-[#C0737B]/90 hover:from-[#C0737B]/90 hover:to-[#C0737B] text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 shadow-lg"
+              className="hidden sm:flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-[#C0737B] to-[#C0737B]/90 hover:from-[#C0737B]/90 hover:to-[#C0737B] text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 shadow-lg"
             >
               <MapPin className="w-4 h-4" />
               <span>View Map</span>
@@ -402,8 +404,7 @@ export function Details() {
 
       {/* Enhanced Map Modal */}
       {showImageModal && (
-        <div 
-          className="fixed inset-0 bg-gradient-to-br from-black/90 via-black/85 to-black/90 backdrop-blur-xl z-50 flex items-center justify-center p-0 sm:p-2 md:p-4 lg:p-6 animate-in fade-in duration-500 overflow-y-auto"
+        <div className="hidden sm:flex fixed inset-0 bg-gradient-to-br from-black/90 via-black/85 to-black/90 backdrop-blur-xl z-50 items-center justify-center p-0 sm:p-2 md:p-4 lg:p-6 animate-in fade-in duration-500 overflow-y-auto"
           onClick={() => {
             setShowImageModal(null)
             setMapLoaded(false)
