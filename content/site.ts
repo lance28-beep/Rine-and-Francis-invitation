@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "December 27, 2025",
-    time: "TBD",
+    time: "2:00 PM",
     venue: "UCCP Mabinay Central Church",
     tagline: "are getting married!",
     theme: "Classic",
@@ -37,24 +37,24 @@ export const siteConfig = {
     theme: "Semi-Formal Attire",
     colors: [ "#C08081", "#808080", "#E5D2D3", "#F5F5F5"],
     sponsors: {
-      ladies: "Blue gown / long dress",
-      gentlemen: "Black suit and tie"
+      ladies: "Gown / Dress",
+      gentlemen: "Suit/Long sleeve"
     },
     guests: {
-      ladies: "Long or cocktail dress",
-      gentlemen: "Long sleeve, polo, pants or suit"
+      ladies: "Dress/Semi-formal Attire",
+      gentlemen: "Long sleeve, Polo, Pants or Suit"
     },
-    note: "Please avoid jeans and casual attire."
+    // note: "We welcome you to dress in the suggested style, but please feel free to wear whatever is comfortable and makes you feel your best for this special occasion!",
   },
-  narrative: `Where it Started
+  narrative: `Where it Started : 
 One cold July night, fate has brought together two hearts: one broken, one still acclimatizing. With a bond slowly woven by God’s perfect plan, strangers turn into friends. With a shared love for music, animals, food, and movies, the bond becomes thicker and the distance, nearer. Love sparked naturally, as if it had already been destined to be.
 As we shared more moments together, we’ve become inseparable. We have been each other’s source of joy, a shoulder to cry on, and armor to make ourselves feel stronger. Through ups and downs, through literal sickness and health, we have always been on each other’s side. 
 It is not just our love that grew; our bodies also grew, doubling our size. But as research says, contented long-term relationships can add pounds of “happy weight.” 
 
-In Sickness and In Health
+In Sickness and In Health :
 The years 2018 and 2019 had been challenging for the couple. He had his first-ever flare-up of his Pustular Psoriasis, which they thought was simply an allergic reaction. It took him 2 months to fully recover, but she still stood by his side and cared for him. She also had her fair share, as she had anxious and depressive episodes during her internship, and she was diagnosed with adjustment disorder with Anxiety and Depressive Symptoms. He travelled from Bayawan to Dumaguete almost every day for weeks to make sure she was okay, until she withdrew from her internship. It is a good thing that lately, no flare-ups or episodes have occurred.
 
-2025, This is it
+2025, This is it : 
 Being together for 13 years made them know each other’s strengths and weaknesses, their imperfections and flaws. It is high time for them to seal the deal. There were no fancy proposals, no rings, no surprises – it was a mutual decision that this year would be the year for them to finally get married.`,
   giftNote: `With all that we have, we are truly blessed. Your presence and prayer are all that we request.
  But if you desire to give nonetheless, a monetary gift is the one we suggest.`,
@@ -118,18 +118,18 @@ export const entourage = [
   { role: "Coin Bearer", name: "Mr. Carl Jezrael Galarpe" },
 
   // Flower Kids
-  { role: "Flower Girl", name: "Gio Mayol" },
-  { role: "Flower Girl", name: "Khalil Dion Socorro" },
-  { role: "Flower Girl", name: "Allem Andaya" },
-  { role: "Flower Girl", name: "Aziel Andaya" },
-  { role: "Flower Girl", name: "Athena Janicha Ybañez" },
-  { role: "Flower Girl", name: "Nayera Kaylee Lobos" },
-  { role: "Flower Girl", name: "Xaviel Anfone" },
-  { role: "Flower Girl", name: "Xaffrael Anfone" },
-  { role: "Flower Girl", name: "Shaquille Ybañez" },
-  { role: "Flower Girl", name: "Alexander Yu" },
-  { role: "Flower Girl", name: "Kyle Anthony Yu" },
-  { role: "Flower Girl", name: "Chinoah Sky Silva" },
+  { role: "Flower Kid", name: "Gio Mayol" },
+  { role: "Flower Kid", name: "Khalil Dion Socorro" },
+  { role: "Flower Kid", name: "Allem Andaya" },
+  { role: "Flower Kid", name: "Aziel Andaya" },
+  { role: "Flower Kid", name: "Athena Janicha Ybañez" },
+  { role: "Flower Kid", name: "Nayera Kaylee Lobos" },
+  { role: "Flower Kid", name: "Xaviel Anfone" },
+  { role: "Flower Kid", name: "Xaffrael Anfone" },
+  { role: "Flower Kid", name: "Shaquille Ybañez" },
+  { role: "Flower Kid", name: "Alexander Yu" },
+  { role: "Flower Kid", name: "Kyle Anthony Yu" },
+  { role: "Flower Kid", name: "Chinoah Sky Silva" },
 
   // Officiating Ministers
   { role: "Officiating Minister", name: "Rev. Arnie Tejo" },

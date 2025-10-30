@@ -140,7 +140,7 @@ export function Footer() {
             {/* Time Section */}
             <div className="flex items-center justify-center gap-3 mb-2">
               <div className="flex items-center gap-2">
-
+                <p className="text-sm sm:text-base md:text-lg text-[#FBFFE8] font-semibold uppercase tracking-[0.2em] mb-3 drop-shadow-md">2:00 PM</p>
               </div>
             </div>
 

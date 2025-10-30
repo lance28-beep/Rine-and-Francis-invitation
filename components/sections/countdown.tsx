@@ -219,9 +219,15 @@ export function Countdown() {
                     2025
                   </p>
                 </div>
+                </div>
               </div>
-            </div>
 
+            {/* Centered Time Section */}
+            <div className="w-full flex justify-center">
+              <p className="text-sm sm:text-base md:text-lg text-[#FBFFE8] font-semibold uppercase tracking-[0.2em] mb-3 drop-shadow-md text-center">
+                2:00 PM
+              </p>
+            </div>
 
 
             {/* Bottom decorative element */}

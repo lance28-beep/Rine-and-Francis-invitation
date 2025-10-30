@@ -107,9 +107,9 @@ export function Entourage() {
     },
     {
       title: "TO SHOWER OUR AISLE WITH FLOWERS",
-      subtitle: "Flower Girls",
+      subtitle: "Flower Kids",
       layout: "centered",
-      roles: ["Flower Girl"],
+      roles: ["Flower Kid"],
       icon: <Flower2 className="w-5 h-5" />,
     },
     {
@@ -174,7 +174,7 @@ export function Entourage() {
       case "Bible Bearer":
       case "Coin Bearer":
         return <Crown className="w-4 h-4" style={{ color: '#525E2C' }} />
-      case "Flower Girl":
+      case "Flower Kid":
         return <Flower2 className="w-4 h-4" style={{ color: '#525E2C' }} />
       case "Little Groom":
       case "Little Bride":
@@ -252,9 +252,6 @@ export function Entourage() {
                             <p className="font-inter font-semibold text-foreground text-sm sm:text-base group-hover/member:text-primary transition-colors duration-300">
                               {member.name}
                             </p>
-                            <p className="font-inter text-xs text-muted-foreground mt-1">
-                              {member.role}
-                            </p>
                           </div>
                         </div>
                       </div>
@@ -269,11 +266,6 @@ export function Entourage() {
                       <>
                         {/* Left column - Groomsmen */}
                         <div className="space-y-2 sm:space-y-3">
-                          <div className="mb-2 sm:mb-3 text-center md:text-left">
-                            <h4 className="text-xs sm:text-sm font-semibold text-white/80 uppercase tracking-wider">
-                              GROOMSMEN
-                            </h4>
-                          </div>
                           {members.filter(m => m.role === "Groomsman").map((member, i) => (
                             <div
                               key={i}
@@ -287,22 +279,13 @@ export function Entourage() {
                                   <p className="font-inter font-semibold text-foreground text-sm sm:text-base group-hover/member:text-primary transition-colors duration-300">
                                     {member.name}
                                   </p>
-                                  <p className="font-inter text-xs text-muted-foreground mt-1">
-                                    {member.role}
-                                  </p>
                                 </div>
                               </div>
                             </div>
                           ))}
                         </div>
-                        
                         {/* Right column - Bridesmaids */}
                         <div className="space-y-2 sm:space-y-3">
-                          <div className="mb-2 sm:mb-3 text-center md:text-left">
-                            <h4 className="text-xs sm:text-sm font-semibold text-white/80 uppercase tracking-wider">
-                              BRIDESMAIDS
-                            </h4>
-                          </div>
                           {members.filter(m => m.role === "Bridesmaid").map((member, i) => (
                             <div
                               key={i}
@@ -315,9 +298,6 @@ export function Entourage() {
                                 <div>
                                   <p className="font-inter font-semibold text-foreground text-sm sm:text-base group-hover/member:text-secondary transition-colors duration-300">
                                     {member.name}
-                                  </p>
-                                  <p className="font-inter text-xs text-muted-foreground mt-1">
-                                    {member.role}
                                   </p>
                                 </div>
                               </div>
@@ -342,9 +322,6 @@ export function Entourage() {
                                   <p className="font-inter font-semibold text-foreground text-sm sm:text-base group-hover/member:text-primary transition-colors duration-300">
                                     {member.name}
                                   </p>
-                                  <p className="font-inter text-xs text-muted-foreground mt-1">
-                                    {member.role}
-                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -366,9 +343,6 @@ export function Entourage() {
                                   <div>
                                     <p className="font-inter font-semibold text-foreground text-sm sm:text-base group-hover/member:text-secondary transition-colors duration-300">
                                       {member.name}
-                                    </p>
-                                    <p className="font-inter text-xs text-muted-foreground mt-1">
-                                      {member.role}
                                     </p>
                                   </div>
                                 </div>

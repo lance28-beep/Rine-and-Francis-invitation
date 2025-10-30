@@ -163,7 +163,7 @@ export function Details() {
             <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm md:text-base text-[#848B79]">
               <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-[#C0737B] flex-shrink-0" />
               <span>
-                {siteConfig.ceremony.date} at {siteConfig.ceremony.time}
+                {siteConfig.ceremony.date} at 2:00 PM
               </span>
               </div>
             </div>
@@ -325,7 +325,7 @@ export function Details() {
                 <p className="text-xs font-semibold text-[#525E2C] mb-2">Guests</p>
                 <p className="text-xs text-[#525E2C] opacity-80 mb-1">Ladies: {siteConfig.dressCode.guests.ladies}</p>
                 <p className="text-xs text-[#525E2C] opacity-80 mb-2">Gentlemen: {siteConfig.dressCode.guests.gentlemen}</p>
-                <p className="text-xs font-medium text-[#525E2C] opacity-90 bg-[#D1AB6D]/10 px-2 py-1 rounded">⚠️ {siteConfig.dressCode.note}</p>
+               
               </div>
             )}
           </div>
