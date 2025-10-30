@@ -51,9 +51,6 @@ One cold July night, fate has brought together two hearts: one broken, one still
 As we shared more moments together, we’ve become inseparable. We have been each other’s source of joy, a shoulder to cry on, and armor to make ourselves feel stronger. Through ups and downs, through literal sickness and health, we have always been on each other’s side. 
 It is not just our love that grew; our bodies also grew, doubling our size. But as research says, contented long-term relationships can add pounds of “happy weight.” 
 
-In Sickness and In Health :
-The years 2018 and 2019 had been challenging for the couple. He had his first-ever flare-up of his Pustular Psoriasis, which they thought was simply an allergic reaction. It took him 2 months to fully recover, but she still stood by his side and cared for him. She also had her fair share, as she had anxious and depressive episodes during her internship, and she was diagnosed with adjustment disorder with Anxiety and Depressive Symptoms. He travelled from Bayawan to Dumaguete almost every day for weeks to make sure she was okay, until she withdrew from her internship. It is a good thing that lately, no flare-ups or episodes have occurred.
-
 2025, This is it : 
 Being together for 13 years made them know each other’s strengths and weaknesses, their imperfections and flaws. It is high time for them to seal the deal. There were no fancy proposals, no rings, no surprises – it was a mutual decision that this year would be the year for them to finally get married.`,
   giftNote: `With all that we have, we are truly blessed. Your presence and prayer are all that we request.
